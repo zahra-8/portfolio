@@ -1,0 +1,102 @@
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: radial-gradient(circle at center, rgba(0, 243, 255, 0.1) 0%, transparent 70%);
+    padding-top: 80px;
+    /* Space for the fixed navbar */
+}
+
+.heroContainer {
+    text-align: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 800px;
+}
+
+.imageWrapper {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    padding: 4px;
+    /* Space for the gradient border */
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+    margin-bottom: 1rem;
+    box-shadow: 0 0 30px rgba(0, 243, 255, 0.3);
+    position: relative;
+}
+
+.profileImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--background);
+    /* Inner border checking against background */
+    background-color: var(--background);
+}
+
+.title {
+    font-family: var(--font-heading);
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: #aaa;
+    margin: 0;
+}
+
+.bio {
+    font-size: 1.1rem;
+    color: #ddd;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 1rem auto;
+}
+
+.buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.primaryBtn,
+.secondaryBtn {
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.primaryBtn {
+    background: var(--accent-purple);
+    color: white;
+    box-shadow: 0 0 20px rgba(188, 19, 254, 0.3);
+}
+
+.primaryBtn:hover {
+    box-shadow: 0 0 30px rgba(188, 19, 254, 0.6);
+    transform: translateY(-2px);
+}
+
+.secondaryBtn {
+    background: transparent;
+    border-color: var(--accent-cyan);
+    color: var(--accent-cyan);
+}
+
+.secondaryBtn:hover {
+    background: rgba(0, 243, 255, 0.1);
+    box-shadow: 0 0 20px rgba(0, 243, 255, 0.2);
+}
